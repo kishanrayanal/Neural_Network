@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title style="color:gold">Neural Network</title>>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					
+					
+					<h3 strong style="color:gold"><u>Neural Networks</u></h3>
+				</section>
+
+				<section>
+					<h2 strong style="color:orange">Hello There</h2>
+					<p>
+						<large>Prsented by </large>
+						<br>
+						<br>
+					
+						<small strong style="color:gold">kishan Rayanal</small>   &nbsp;    <small>2SD18CS047</small>
+						<br>
+						<small strong style="color:gold">Pruthviraj Horadi</small>  &nbsp;  <small>2SD18CS131</small>
+					</p>
+				</section>
+
+				
+
+				<section>
+					<section>
+						<h4 strong style="color:orange"><u>What is Neural Network?</u></h4>
+						<p>
+							Information processing paradigm inspired by biological nervous systems, such as our brain
+						</p>
+						
+						
+					</section>
+					<section>
+						<h5 strong style="color:orange"><u>Definition of ANN</u></h5>
+						<p> Data processing system consisting of a large number of simple, highly interconnected processing elements (artificial neurons) in an architecture inspired by the structure of the cerebral cortex of the brain
+						</p>
+						<br>
+						<br>
+					</section>
+					<section>
+						<img src="images/image1.png" alt="put image here"width="900" height="650" >
+					</section>
+					
+
+				</section>
+
+				<section >
+					<section>
+						<h2 strong style="color:gold">Early models</h2>
+						
+					</section>
+
+					<section>
+						<h2 strong style="color:gold">McCulloch-Pitts neurons</h2>
+						<p>The first computational model of a neuron was proposed by Warren MuCulloch and Walter Pitts in 1943 </p>
+					</section>
+
+					<section>
+						<h2 strong style="color:gold">MCP Neuron Model</h2>
+						<p>1)First mathematical model of a biological neuron</p>
+					
+						
+						<p>2)Basically building block of neural network</p>
+						
+						
+						<p>3)Directed weight Graph is used for connecting neurons</p>
+						
+						<p>4)Two Possible states of neuron</p>
+						<br>
+						<small>Acive(1)</small>
+						<br>
+						<small>Silent(0)</small>
+
+					</section>
+
+					<section>
+						
+						<img src="images/image2.png" alt="put image here"width="900" height="650" >
+					</section>
+					<section>
+						<h2 strong style="color:gold">BIAS/Threshold</h2>
+						<br>
+						<p>Minimum value of weighted active inputs for a neuron to fire</p>
+						<br>
+						<p>If effective input is larger than T, then O/p ->1 else 0</p>
+
+					</section>
+					
+				</section>
+
+				<section>
+					<section>
+						<h2 strong style="color:gold"><u>Perceptron</u>
+						</h2>
+						<br>
+						<p>Frank Rosenblatt, proposed the classical perceptron model in 1958</p>
+					</section>
+
+					<section>
+						<p>1) Developed by Frank Rosenblatt by using McCulloch and Pitts model, perceptron is the basic operational unit of artificial neural networks. It employs supervised learning rule and is able to classify the data into two classes
+						</p>
+						<br>
+						<p>2) The perceptroncan can only classify data that is linerally separable</p>
+						<br>
+					</section>
+
+					<section>
+						<img src="images/image3.png" alt="put image here"width="500" height="300" >
+						<br>
+						<img src="images/image4.png" alt="put image here"width="500" height="300" >
+					</section>
+
+					<section>
+						<p strong style="color:orangered"><u>Characteristics of the perceptron:</u></p>
+						<br>
+						<small>1) It consists of a single neuron with an arbitrary number of inputs along with adjustable weights</small>
+						<br>
+						<small>2) The outputof the neuron is 1 or 0 depending upon the threshold</small>
+						<br>
+						<small>It also consists of a bais which is always 1</small>
+						<br>
+						<img src="images/image5.png" alt="put image here"width="500" height="300" >
+					</section>
+					
+					
+				</section>
+
+				<section>
+					<section>
+						<h2 strong style="color:gold"><u>Differences between MP-neuron and Perceptron</u></>
+						</h2>
+						
+						<p>a) It overcomes some of the limitationsof the MP neuron by introducing the concept of numerical weights for inputs and mechanism for learning those weights</p>
+						<br>
+						<p>b) Inputs are no longer limited to boolean values like in the case of an MP-neuron, it supports real inputs as well which makes it more useful and generalized</p>
+						<br>
+						
+					</section>
+
+					
+					
+				</section>
+
+				<section>
+					<section>
+						<h2><u>Activation Function</u>
+						</h2>
+						<h4>Neuron
+						</h4>
+						<small>Like a Human Brain, here a Neuron takes input and do some function to give the output
+							Function going to be the Mathematical function
+							Those Function is known as ACTIVATION function
+							.							 
+						</small>
+						<br>
+						<br>
+						<h4>Activation Function
+						</h4>
+						<small>1) Step Function</small>
+						<br>
+						<small>2) Sigmoid Function						</small>
+						<br>
+						<small>3) Tanh Function						</small>
+						<br>
+						
+												 
+						
+						<br>
+						
+					</section>
+					<section>
+						
+						<img src="images/image6 (1).png" alt="image here" width="500" height="250">
+						<br>
+						<img src="images/image7.png" alt="image here" width="500" height="250">
+					</section>
+
+					<section>
+						<h2><u>Step Function</u>
+						</h2>
+						<img src="images/image8.png" alt="image here" width="500" height="250">
+						<br>
+						<small>If value of X is greater than or equal to 0, then output is 1, If value of X is less than 0, then output is 0
+						</small>
+						<br>
+						<small>Since step Function is non differentiable to zero, it can’t do the gradient descent method, so it can’t update weights.
+						</small>
+					</section>
+					<section>
+						<h2><u>Sigmoid Function	</u>
+						</h2>
+						<img src="images/image9.png" alt="image here" width="500" height="250">
+						<br>
+						<small>If value of X is infinity, then output is 1, If value of X is negative infinity, then output is 0
+							It captures non-linearity in the data
+							
+						</small>
+						<br>
+						<small>It can use Gradient descent & Back propagation method to calculate weights. 
+						</small>
+						<br>
+						<small>Output range [0,1]
+						</small>
+					</section>
+					<section>
+						<h2><u>Tanh Function	</u>
+						</h2>
+						<img src="images/image10.png" alt="image here" width="500" height="250">
+						<br>
+						<small>Rescaled of Sigmoid Function
+
+						</small>
+						<br>
+						<small>Better learning rate requires, higher gradient. In some times, for the data is centred around 0, derivatives are higher.
+
+						</small>
+						<br>
+						<small>Output range [0,1]
+						</small>
+					</section>
+
+					
+				</section>
+
+				<section>
+					<section>
+						<h2 strong style="color:goldenrod">Implementation of NN
+						</h2>
+						<h2 strong style="color:goldenrod"><u>Back Propagation</u>
+						</h2>
+						<br>
+						<p>Calculating error between predicted output and target output and use Gradient descent method to update weights
+						</p>
+					</section>
+
+					<section>
+						<img src="images/image12.png" alt="image here" width="800" height="650">
+					</section>
+
+					
+				</section>
+
+				<section>
+					<section>
+						<h2 strong style="color:goldenrod">SVM - Support Vector Machine
+						</h2>
+						
+					</section>
+
+					
+
+					
+				</section>
+				<section>
+					<section>
+						<h2 strong style="color:goldenrod">What is SVM? </h2>
+						
+						<p>Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems.
+						</p>
+						<br>
+						<p>The goal of the Support Vector Machine is to draw a hyperplane in n dimensional space such that it maximises margin between classification groups, so that the new data point can be put in the correct category in future</p>
+						
+					</section>
+
+					
+
+					
+				</section>
+
+				<section>
+					<section>
+						<p><strong style="color:gold">Let’s Consider an Example</strong></p>
+						<img src="images/image13a.png" alt="image here" width="800" height="550">
+					</section>
+					<section>
+						<h4>Step 1:-
+							Scatter Plot</h4>
+						<p>It is a plot of data points on the graph</p>
+						<img src="images/image13.jpg" alt="image here" width="800" height="500">
+					</section>
+					<section>
+						<h4>Step 2:-
+							Classification
+							Boundary</h4>
+						
+						<img src="images/image14.jpg" alt="image here" width="800" height="500">
+					</section>
+					<section>
+						<h4>Step 3:-
+							Best Classification
+							Boundary</h4>
+						<small>Margin :- The distance between the nearest vectors and the classification Boundary.
+							The classification boundary with higher margin is better because it accommodate  more vectors (Black Line)
+						</small>
+						<img src="images/image15.jpg" alt="image here" width="800" height="500">
+					</section>
+					<section>
+						
+						<p>The nearby data points are called as support vectors, hence the name Support Vector Machine
+						</p>
+						<img src="images/image16.jpg" alt="image here" width="800" height="500">
+					</section>
+				</section>
+				
+
+				<section>
+					<h2 strong style="color:goldenrod">Types of SVM</h2>
+					<br>
+					<p>1) Linear SVM</p>
+					
+					<small>Linear SVM is used for linearly separable data, which means if a dataset can be classified into two classes by using a single straight line, then such data is termed as linearly separable data, and classifier is used called as Linear SVM classifier</small>
+					<br>
+					<p>2) Non-linear SVM</p>
+					
+					<small>: Non-Linear SVM is used for non-linearly separated data, which means if a dataset cannot be classified by using a straight line, then such data is termed as non-linear data and classifier used is called as Non-linear SVM classifier</small>
+				</section>
+
+				<section>
+					<section>
+
+					   <p>2D - Line </p>
+					   <p>3D - Plane</p>
+					   <p>ND - Hard to imagine but it is possible theoretically that boundary is called HYPER PLANE</p>
+					   <img src="images/image17.jpg" alt="image here" width="800" height="300">
+					</section>
+					
+				</section>
+				<section>
+					<section>
+
+						<h2 strong style="color:goldenrod">Technical terms</h2>
+						<h4>1] Gamma (Margin is considered)
+						</h4>
+						<p>     High Gamma : </p>
+						<small>Boundary drawn on the bases of the data points which are nearer </small>
+						<p>     Low Gamma : </p>
+						<small>Boundary drawn on the bases of the far away data points(vectors) </small>
+					</section>
+					<section>
+						<img src="images/image18.jpg" alt="image here" width="800" height="500">
+					</section>
+					<section>
+
+						
+						<h4>2] Regularization(C) (Margin is considered)
+
+						</h4>
+						<p>     High Regularization :  </p>
+						<small>Boundary drawn to avoid any classification error </small>
+						<p>     Low Regularization: </p>
+						<small>Boundary drawn as a straight line with some error.
+							Both the approach are valid							 </small>
+					</section>
+					<section>
+						<img src="images/image19.jpg" alt="image here" width="800" height="500">
+					</section>
+					
+				</section>
+				
+
+				<section>
+					<section>
+						<h2 strong style="color:gold"><u>Implementation of SVM in Python</u></h2>
+						<p>We will consider the IRIS flower data set for this implementation</p>
+						<p>This data set has 4 tables</p>
+						<small>	DESCR, data, feature_names, target, target_name </small>
+						
+						
+						<p>It has 4 feature_name
+						</p>
+						<small>Sepal length, Sepal width, Petal length, Petal width
+						</small>
+					</section>
+					<section>
+						<img src="images/image20.png" alt="image here" width="800" height="500">
+					</section>
+					<section>
+						<h2 strong style="color:gold"><u>Types of IRIS Flowers</u></h2>
+						<img src="images/image21.jpg" alt="image here" width="900" height="400">
+					</section>
+				</section>
+
+				
+				<section>
+					<h2 strong style="color:gold"><u>Thank YOU</u></h2>
+					
+					
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://salesportal.aptaracorp.com/PPDI/POC/js/geometry/geometryangle.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+			$('body').Geometryangle({
+// handle transparent colors
+mesh:{
+
+  width: 1.2,
+  height: 1.2,
+
+  // How far should the mesh vary into z-space.
+  depth: 10,
+
+  // Number of columns for the mesh.
+  columns: undefined,
+
+  columns_auto: true,
+
+  // Number of rows for the mesh.
+  rows: undefined,
+
+  rows_auto: true,
+  zoom: 1,
+  xRange: 0.8,
+  yRange: 0.1,
+  zRange: 1.0,
+  ambient: 'rgba(85, 85, 85, 1)',
+  diffuse: 'rgba(255, 255, 255, 1)',
+  background: 'rgb(0, 0, 0)',
+  speed: 0.0002,
+  fluctuationSpeed: 0.5,
+  fluctuationIntensity: 0,
+  onRender: function () {
+  },
+  floorPosition: false,
+  draw: true
+
+}, 
+
+
+lights: {
+
+  // How many light sources belong to this light.
+  count: 1,
+
+  xyScalar: 1,
+
+  // Position of light source.
+  zOffset: 100,
+
+  ambient: 'rgba(255,0,102, 1)',
+  diffuse: 'rgba(255,136,0, 1)',
+  speed: 0.010,
+  gravity: 1200,
+
+  // Dampening of light's movements.
+  dampening: 0.95,
+
+  minLimit: 10,
+  maxLimit: null,
+  minDistance: 20,
+  maxDistance: 400,
+  autopilot: false,
+  draw: false, //show circle
+  bounds: FSS.Vector3.create(),
+  step: FSS.Vector3.create(
+    Math.randomInRange(0.2, 1.0),
+    Math.randomInRange(0.2, 1.0),
+    Math.randomInRange(0.2, 1.0)
+  )
+
+},
+
+// specify the thickness, color, stroke, etc. 
+line: {
+
+  fill: "rgba(0, 0, 0, 0)",
+  thickness: 1,
+  fluctuationIntensity: 0,
+  fluctuationSpeed: 0.5,
+  draw: false
+
+}, 
+
+// Set the point attributes for the vertex. 
+vertex: {
+
+  // Radius of vertice circle.
+  radius: 0,
+
+  fill: "rgba(0, 0, 0, 0)",
+
+  // Fluctuates opacity of vertex.
+  fluctuationSpeed: 0.5,
+
+  fluctuationIntensity: 0,
+  strokeWidth: 0,
+  strokeColor: "rgba(0, 0, 0, 0)",
+
+  // Instead of setting alpha channel to zero
+  // Set draw to false to avoid computing.
+  draw: false
+
+}
+
+});
+
+
+		</script>
+
+	</body>
+</html>
